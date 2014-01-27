@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<blueprint xmlns="http://www.osgi.org/xmlns/blueprint/v1.0.0">
+    <reference id="userAO" interface="com.shuyun.mybatis1.UserAO" component-name="userAOImpl"></reference>
+
+    <reference id="userAO1" interface="com.shuyun.mybatis1.UserAO" component-name="userAOImpl1"></reference>
+
+    <reference id="serviceAO" interface="com.shuyun.mybatis1.ServiceAO"></reference>
+
+    <bean id="testBean" class="com.shuyun.test.TestBean" init-method="init">
+        <property name="userAO" ref="userAO" ></property>
+        <property name="serviceAO" ref="serviceAO"></property>
+    </bean>
+
+ </blueprint>
