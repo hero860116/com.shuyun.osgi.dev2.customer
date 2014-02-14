@@ -1,14 +1,25 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <blueprint xmlns="http://www.osgi.org/xmlns/blueprint/v1.0.0">
-    <reference id="userAO" interface="com.shuyun.mybatis1.UserAO" component-name="userAOImpl"></reference>
+<!--    <reference id="userAO" interface="com.shuyun.mybatis1.UserAO" component-name="userAOImpl"></reference>
 
     <reference id="userAO1" interface="com.shuyun.mybatis1.UserAO" component-name="userAOImpl1"></reference>
 
     <reference id="serviceAO" interface="com.shuyun.mybatis1.ServiceAO"></reference>
 
+    <reference id="mybatisTemplate" interface="com.shuyun.mybatis.base.MybatisTemplate"></reference>
+
     <bean id="testBean" class="com.shuyun.test.TestBean" init-method="init">
         <property name="userAO" ref="userAO" ></property>
         <property name="serviceAO" ref="serviceAO"></property>
+        <property name="mybatisTemplate" ref="mybatisTemplate"></property>
+    </bean>-->
+
+    <reference id="userDAO" interface="com.shuyun.osgi.dev2.customer.dao.UserDAO"></reference>
+    <reference id="userManagerAO" interface="com.shuyun.osgi.dev2.customer.usermanager.UserManagerAO"></reference>
+
+    <bean id="testBean" class="com.shuyun.test.TestBean" init-method="init">
+        <property name="userDAO" ref="userDAO" ></property>
+        <property name="userManagerAO" ref="userManagerAO" ></property>
     </bean>
 
  </blueprint>

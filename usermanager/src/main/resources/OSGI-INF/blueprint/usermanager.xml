@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<blueprint xmlns="http://www.osgi.org/xmlns/blueprint/v1.0.0">
+
+    <bean id="userManagerAOImpl" class="com.shuyun.osgi.dev2.customer.usermanager.impl.UserManagerAOImpl">
+        <property name="userDAO" ref="userDAO"    />
+    </bean>
+
+    <reference id="userDAO" interface="com.shuyun.osgi.dev2.customer.dao.UserDAO"></reference>
+
+    <service id="userManagerAO"  ref="userManagerAOImpl" auto-export="all-classes"/>
+</blueprint>

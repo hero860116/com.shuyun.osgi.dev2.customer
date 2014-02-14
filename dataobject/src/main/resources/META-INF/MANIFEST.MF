@@ -1,0 +1,9 @@
+Manifest-Version: 1.0
+Bundle-ManifestVersion: 2
+Bundle-Name: com.shuyun.osgi.dev2.customer.dataobject
+Bundle-SymbolicName: dataobject
+Bundle-Version: 1.0.1
+Bundle-Vendor: shuyun
+Bundle-Activator: com.shuyun.osgi.dev2.customer.Activator
+Bundle-RequiredExecutionEnvironment: J2SE-1.5
+Export-Package: com.shuyun.osgi.dev2.customer.dataobject

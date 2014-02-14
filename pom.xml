@@ -12,6 +12,11 @@
         <module>mybatis</module>
         <module>mybatistest</module>
         <module>web</module>
+        <module>mybatisbase</module>
+        <module>dataobject</module>
+        <module>dao</module>
+        <module>usermanager</module>
+        <module>transaction</module>
     </modules>
 
 

@@ -1,7 +1,8 @@
 package com.shuyun.test;
 
-import com.shuyun.mybatis1.ServiceAO;
-import com.shuyun.mybatis1.UserAO;
+import com.shuyun.osgi.dev2.customer.dao.TestDAO;
+import com.shuyun.osgi.dev2.customer.dao.UserDAO;
+import com.shuyun.osgi.dev2.customer.dao.impl.UserDAOImpl;
 import org.osgi.framework.BundleActivator;
 import org.osgi.framework.BundleContext;
 import org.osgi.framework.ServiceReference;
@@ -27,8 +28,31 @@ public class Activator implements BundleActivator {
 		Activator.context = bundleContext;
 
 
-        logger.info("########mybatistest************");
+        logger.info("bundle mybatistest start");
 
+
+        ServiceReference serviceRef = bundleContext.getServiceReference(UserDAO.class);
+
+        if (serviceRef != null) {
+            logger.info("UserDAO:{}", serviceRef);
+
+            UserDAO userDAO = (UserDAO)bundleContext.getService(serviceRef);
+
+
+            logger.info("serviceReference---getName:{}", userDAO);
+        }
+
+        serviceRef = bundleContext.getServiceReference(TestDAO.class);
+
+        if (serviceRef != null) {
+            logger.info("UserDAO:{}", serviceRef);
+
+            TestDAO userDAO = (TestDAO)bundleContext.getService(serviceRef);
+
+
+            logger.info("serviceReference---getName:{}", userDAO);
+        }
+/*
         ServiceReference serviceRef = bundleContext.getServiceReference(UserAO.class);
 
         if (serviceRef != null) {
@@ -51,8 +75,20 @@ public class Activator implements BundleActivator {
             logger.info("serviceReference---getName:{}", userAO.getName());
         }
 
+        serviceRef = bundleContext.getServiceReference(MybatisTemplate.class);
 
-	}
+        if (serviceRef != null) {
+            logger.info("serviceReference:{}", serviceRef);
+
+            MybatisTemplate userAO = (MybatisTemplate)bundleContext.getService(serviceRef);
+
+
+            logger.info("MybatisTemplate---getName:{}", userAO);
+        }*/
+
+
+
+    }
 
 	/*
 	 * (non-Javadoc)

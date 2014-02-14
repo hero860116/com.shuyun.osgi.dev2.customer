@@ -34,9 +34,33 @@
         </dependency>
 
         <dependency>
+            <groupId>com.shuyun.osgi.dev2.customer</groupId>
+            <artifactId>mybatisbase</artifactId>
+            <version>1.0-SNAPSHOT</version>
+        </dependency>
+
+        <dependency>
             <groupId>org.apache.aries.blueprint</groupId>
             <artifactId>org.apache.aries.blueprint.api</artifactId>
             <version>1.0.0</version>
+        </dependency>
+
+        <dependency>
+            <groupId>com.shuyun.osgi.dev2.customer</groupId>
+            <artifactId>dao</artifactId>
+            <version>1.0-SNAPSHOT</version>
+        </dependency>
+
+        <dependency>
+            <groupId>com.shuyun.osgi.dev2.customer</groupId>
+            <artifactId>dataobject</artifactId>
+            <version>1.0-SNAPSHOT</version>
+        </dependency>
+
+        <dependency>
+            <groupId>com.shuyun.osgi.dev2.customer</groupId>
+            <artifactId>usermanager</artifactId>
+            <version>1.0-SNAPSHOT</version>
         </dependency>
     </dependencies>
 
