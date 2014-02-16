@@ -35,7 +35,7 @@
     <orderEntry type="module" module-name="dao" />
     <orderEntry type="library" name="Maven: commons-lang:commons-lang:2.5" level="project" />
     <orderEntry type="module" module-name="dataobject" />
-    <orderEntry type="module" module-name="usermanager" />
+    <orderEntry type="module" module-name="usermanagerao" />
     <orderEntry type="module" module-name="transaction" />
   </component>
 </module>

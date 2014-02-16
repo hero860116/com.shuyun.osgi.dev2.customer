@@ -12,7 +12,7 @@
         <module>mybatistest</module>
         <module>dataobject</module>
         <module>dao</module>
-        <module>usermanager</module>
+        <module>usermanagerao</module>
         <module>transaction</module>
     </modules>
 

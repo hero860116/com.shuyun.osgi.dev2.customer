@@ -9,8 +9,9 @@
     </parent>
     <modelVersion>4.0.0</modelVersion>
 
-    <artifactId>usermanager</artifactId>
+    <artifactId>usermanagerao</artifactId>
     <packaging>bundle</packaging>
+    <version>1.0.1</version>
 
     <dependencies>
 
@@ -57,7 +58,6 @@
                     <instructions>
                         <Export-Package>com.shuyun.osgi.dev2.customer.usermanager.impl,com.shuyun.osgi.dev2.customer.usermanager</Export-Package>
                         <Import-Package></Import-Package>
-                        <Bundle-Version>1.0.8</Bundle-Version>
                     </instructions>
                     <unpackBundle>false</unpackBundle>
                 </configuration>
