@@ -10,6 +10,7 @@
     <modelVersion>4.0.0</modelVersion>
 
     <artifactId>transaction</artifactId>
+    <version>1.0.1</version>
     <packaging>bundle</packaging>
 
     <dependencies>
@@ -30,7 +31,7 @@
         <dependency>
             <groupId>com.shuyun.osgi.dev2.customer</groupId>
             <artifactId>dao</artifactId>
-            <version>1.0-SNAPSHOT</version>
+            <version>1.0.6</version>
         </dependency>
 
     </dependencies>
@@ -44,9 +45,7 @@
                 <extensions>true</extensions>
                 <configuration>
                     <instructions>
-                        <Export-Package></Export-Package>
-                        <Import-Package></Import-Package>
-                        <Bundle-Version>1.0.5</Bundle-Version>
+                        <Bundle-Activator>com.shuyun.osgi.dev2.customer.Activator</Bundle-Activator>
                     </instructions>
                     <unpackBundle>false</unpackBundle>
                 </configuration>

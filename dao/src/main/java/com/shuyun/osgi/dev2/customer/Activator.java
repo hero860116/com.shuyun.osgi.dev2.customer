@@ -1,18 +1,9 @@
 package com.shuyun.osgi.dev2.customer;
 
-import com.shuyun.osgi.dev2.customer.base.MybatisInit;
-import com.shuyun.osgi.dev2.customer.base.MybatisTemplateDev;
-import com.shuyun.osgi.dev2.customer.dao.impl.UserDAOImpl;
-import com.shuyun.osgi.dev2.customer.dataobject.UserDO;
 import org.osgi.framework.BundleActivator;
 import org.osgi.framework.BundleContext;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
-
-import java.util.Calendar;
-import java.util.Date;
-import java.util.HashMap;
-import java.util.Map;
 
 public class Activator implements BundleActivator {
 
@@ -35,7 +26,7 @@ public class Activator implements BundleActivator {
 
         //logger.info("**************** minutes : {}", DateUtils.truncate(new Date(), Calendar.MINUTE));
 
-	new MybatisInit().init();
+	//new MybatisInit().init();
       /*
         String savaSql = "UPDATE `tb_shop_config` SET `shop_id`='6655', `shop_name`='芝曼专业护发', `catch_index`='10000', `status`='4' WHERE (`shop_id`='6655')";
 

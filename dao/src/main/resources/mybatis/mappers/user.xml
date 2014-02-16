@@ -1,23 +1,19 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
 "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
-<mapper namespace="user">
+<mapper namespace="address">
 
-    <select id="exec" parameterType="map" resultType="map">
-		${execSql}
-	</select>
-
-    <sql id="userFields">
-        name,
-        age
+    <sql id="addressFields">
+        u_name,
+        address
     </sql>
 
-    <insert id="saveUser" parameterType="UserDO">
+    <insert id="saveAddress" parameterType="AddressDO">
         insert into
-            t_user (<include refid="user.userFields"/>)
+            t_address (<include refid="address.addressFields"/>)
         values (
-            #{name},
-            #{age}
+            #{uName},
+            #{address}
         )
     </insert>
 

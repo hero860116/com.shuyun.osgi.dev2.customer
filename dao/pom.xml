@@ -10,6 +10,7 @@
     <modelVersion>4.0.0</modelVersion>
 
     <artifactId>dao</artifactId>
+    <version>1.0.6</version>
     <packaging>bundle</packaging>
 
     <dependencies>
@@ -56,9 +57,15 @@
         </dependency>
 
         <dependency>
+            <groupId>com.jolbox</groupId>
+            <artifactId>bonecp</artifactId>
+            <version>0.8.0.RELEASE</version>
+        </dependency>
+
+        <dependency>
             <groupId>com.shuyun.osgi.dev2.customer</groupId>
             <artifactId>dataobject</artifactId>
-            <version>1.0-SNAPSHOT</version>
+            <version>1.0.1</version>
         </dependency>
 
     </dependencies>
@@ -71,10 +78,14 @@
                 <version>2.4.0</version>
                 <extensions>true</extensions>
                 <configuration>
-                    <instructions>
-                        <Export-Package></Export-Package>
-                        <Import-Package></Import-Package>
-                        <Bundle-Version>1.0.5</Bundle-Version>
+                   <instructions>
+                       <Export-Package>com.shuyun.osgi.dev2.customer;version="1.0.1";uses:="org
+                           .osgi.framework",com.shuyun.osgi.dev2.customer.base;version="1.0.6";use
+                           s:="javax.sql,org.apache.ibatis.session",com.shuyun.osgi.dev2.customer.
+                           dao;version="1.0.6";uses:="com.shuyun.osgi.dev2.customer.dataobject",com.shuyun.osgi.dev2.customer.
+                           dao.impl
+                       </Export-Package>
+                        <Bundle-Activator>com.shuyun.osgi.dev2.customer.Activator</Bundle-Activator>
                     </instructions>
                     <unpackBundle>false</unpackBundle>
                 </configuration>

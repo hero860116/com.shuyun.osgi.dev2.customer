@@ -2,10 +2,10 @@
 <module org.jetbrains.idea.maven.project.MavenProjectsManager.isMavenModule="true" type="JAVA_MODULE" version="4">
   <component name="FacetManager">
     <facet type="Osmorc" name="OSGi">
-      <configuration manifestGenerationMode="OsmorcControlled" manifestLocation="" jarfileLocation="dao-1.0-SNAPSHOT.jar" outputPathType="CompilerOutputPath" bndFileLocation="" bundlorFileLocation="" bundleActivator="" bundleSymbolicName="com.shuyun.osgi.dev2.customer.dao" bundleVersion="1.0.5" ignoreFilePattern="" useProjectDefaultManifestFileLocation="true" alwaysRebuildBundleJAR="false" doNotSynchronizeWithMaven="false">
+      <configuration manifestGenerationMode="OsmorcControlled" manifestLocation="" jarfileLocation="dao-1.0.6.jar" outputPathType="CompilerOutputPath" bndFileLocation="" bundlorFileLocation="" bundleActivator="com.shuyun.osgi.dev2.customer.Activator" bundleSymbolicName="com.shuyun.osgi.dev2.customer.dao" bundleVersion="1.0.0" ignoreFilePattern="" useProjectDefaultManifestFileLocation="true" alwaysRebuildBundleJAR="false" doNotSynchronizeWithMaven="false">
         <additionalProperties>
           <property key="Bundle-Name" value="com.shuyun.osgi.dev2.customer.dao" />
-          <property key="Include-Resource" value="META-INF/MANIFEST.MF=$MODULE_DIR$/src/main/resources/META-INF/MANIFEST.MF,mybatis/mappers/user.xml=$MODULE_DIR$/src/main/resources/mybatis/mappers/user.xml,mybatis/mybatis-config.xml=$MODULE_DIR$/src/main/resources/mybatis/mybatis-config.xml,OSGI-INF/blueprint/dao.xml=$MODULE_DIR$/src/main/resources/OSGI-INF/blueprint/dao.xml" />
+          <property key="Include-Resource" value="mybatis/mappers/address.xml=$MODULE_DIR$/src/main/resources/mybatis/mappers/address.xml,mybatis/mappers/user.xml=$MODULE_DIR$/src/main/resources/mybatis/mappers/user.xml,mybatis/mybatis-config.xml=$MODULE_DIR$/src/main/resources/mybatis/mybatis-config.xml,OSGI-INF/blueprint/dao.xml=$MODULE_DIR$/src/main/resources/OSGI-INF/blueprint/dao.xml" />
         </additionalProperties>
         <additionalJARContents />
       </configuration>
@@ -27,6 +27,8 @@
     <orderEntry type="library" name="Maven: org.eclipse:org.eclipse.osgi:3.8.0.v20120529-1548" level="project" />
     <orderEntry type="library" name="Maven: commons-lang:commons-lang:2.5" level="project" />
     <orderEntry type="library" name="Maven: mysql:mysql-connector-java:5.1.29" level="project" />
+    <orderEntry type="library" name="Maven: com.jolbox:bonecp:0.8.0.RELEASE" level="project" />
+    <orderEntry type="library" name="Maven: com.google.guava:guava:15.0" level="project" />
     <orderEntry type="module" module-name="dataobject" />
   </component>
 </module>

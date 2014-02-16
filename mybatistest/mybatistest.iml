@@ -24,8 +24,8 @@
     <orderEntry type="sourceFolder" forTests="false" />
     <orderEntry type="library" name="Maven: org.eclipse:org.eclipse.osgi:3.8.0.v20120529-1548" level="project" />
     <orderEntry type="library" name="Maven: org.slf4j:slf4j-api:1.7.5" level="project" />
-    <orderEntry type="module" module-name="mybatis" />
-    <orderEntry type="module" module-name="mybatisbase" />
+    <orderEntry type="library" name="Maven: com.shuyun.osgi.dev2.customer:mybatis:1.0-SNAPSHOT" level="project" />
+    <orderEntry type="library" name="Maven: com.shuyun.osgi.dev2.customer:mybatisbase:1.0-SNAPSHOT" level="project" />
     <orderEntry type="library" name="Maven: org.mybatis:mybatis:3.2.4" level="project" />
     <orderEntry type="library" name="Maven: org.mybatis:mybatis-spring:1.2.2" level="project" />
     <orderEntry type="library" name="Maven: com.jolbox:bonecp:0.8.0.RELEASE" level="project" />

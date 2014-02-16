@@ -2,10 +2,11 @@
 <module org.jetbrains.idea.maven.project.MavenProjectsManager.isMavenModule="true" type="JAVA_MODULE" version="4">
   <component name="FacetManager">
     <facet type="Osmorc" name="OSGi">
-      <configuration manifestGenerationMode="OsmorcControlled" manifestLocation="" jarfileLocation="usermanager-1.0-SNAPSHOT.jar" outputPathType="CompilerOutputPath" bndFileLocation="" bundlorFileLocation="" bundleActivator="" bundleSymbolicName="com.shuyun.osgi.dev2.customer.usermanager" bundleVersion="1.0.5" ignoreFilePattern="" useProjectDefaultManifestFileLocation="true" alwaysRebuildBundleJAR="false" doNotSynchronizeWithMaven="false">
+      <configuration manifestGenerationMode="OsmorcControlled" manifestLocation="" jarfileLocation="usermanager-1.0-SNAPSHOT.jar" outputPathType="CompilerOutputPath" bndFileLocation="" bundlorFileLocation="" bundleActivator="" bundleSymbolicName="com.shuyun.osgi.dev2.customer.usermanager" bundleVersion="1.0.8" ignoreFilePattern="" useProjectDefaultManifestFileLocation="true" alwaysRebuildBundleJAR="false" doNotSynchronizeWithMaven="false">
         <additionalProperties>
+          <property key="Export-Package" value="com.shuyun.osgi.dev2.customer.usermanager.impl,com.shuyun.osgi.dev2.customer.usermanager" />
           <property key="Bundle-Name" value="com.shuyun.osgi.dev2.customer.usermanager" />
-          <property key="Include-Resource" value="META-INF/MANIFEST.MF=$MODULE_DIR$/src/main/resources/META-INF/MANIFEST.MF,OSGI-INF/blueprint/usermanager.xml=$MODULE_DIR$/src/main/resources/OSGI-INF/blueprint/usermanager.xml" />
+          <property key="Include-Resource" value="META-INF/MANIFEST.MF=$MODULE_DIR$/src/main/resources/META-INF/MANIFEST.MF" />
         </additionalProperties>
         <additionalJARContents />
       </configuration>
@@ -28,6 +29,8 @@
     <orderEntry type="library" name="Maven: org.mybatis:mybatis:3.2.4" level="project" />
     <orderEntry type="library" name="Maven: commons-lang:commons-lang:2.5" level="project" />
     <orderEntry type="library" name="Maven: mysql:mysql-connector-java:5.1.29" level="project" />
+    <orderEntry type="library" name="Maven: com.jolbox:bonecp:0.8.0.RELEASE" level="project" />
+    <orderEntry type="library" name="Maven: com.google.guava:guava:15.0" level="project" />
     <orderEntry type="module" module-name="dataobject" />
     <orderEntry type="module" module-name="transaction" />
   </component>

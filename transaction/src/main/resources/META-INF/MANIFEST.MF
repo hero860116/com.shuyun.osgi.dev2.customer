@@ -1,10 +1,1 @@
-Manifest-Version: 1.0
-Bundle-ManifestVersion: 2
-Bundle-Name: com.shuyun.osgi.dev2.customer.transaction
-Bundle-SymbolicName: transaction
-Bundle-Version: 1.0.4
-Bundle-Vendor: shuyun
-Bundle-Activator: com.shuyun.osgi.dev2.customer.Activator
-Bundle-RequiredExecutionEnvironment: J2SE-1.5
-Import-Package: org.osgi.framework,org.slf4j,com.shuyun.osgi.dev2.customer.base
-Export-Package: com.shuyun.osgi.dev2.customer.transaction
+

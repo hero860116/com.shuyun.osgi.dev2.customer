@@ -25,10 +25,10 @@ public class Activator implements BundleActivator {
 
         logger.info("bundle usermanager start");
 
-        UserDO userDO = new UserDO();
+/*        UserDO userDO = new UserDO();
         userDO.setAge(26);
         userDO.setName("liufei");
-        new UserManagerAOImpl().saveUser(userDO);
+        new UserManagerAOImpl().saveUser(userDO);*/
 
 		Activator.context = bundleContext;
 	}

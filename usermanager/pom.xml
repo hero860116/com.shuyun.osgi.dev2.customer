@@ -30,19 +30,19 @@
         <dependency>
             <groupId>com.shuyun.osgi.dev2.customer</groupId>
             <artifactId>dao</artifactId>
-            <version>1.0-SNAPSHOT</version>
+            <version>1.0.6</version>
         </dependency>
 
         <dependency>
             <groupId>com.shuyun.osgi.dev2.customer</groupId>
             <artifactId>dataobject</artifactId>
-            <version>1.0-SNAPSHOT</version>
+            <version>1.0.1</version>
         </dependency>
 
         <dependency>
             <groupId>com.shuyun.osgi.dev2.customer</groupId>
             <artifactId>transaction</artifactId>
-            <version>1.0-SNAPSHOT</version>
+            <version>1.0.1</version>
         </dependency>
     </dependencies>
 
@@ -55,9 +55,9 @@
                 <extensions>true</extensions>
                 <configuration>
                     <instructions>
-                        <Export-Package></Export-Package>
+                        <Export-Package>com.shuyun.osgi.dev2.customer.usermanager.impl,com.shuyun.osgi.dev2.customer.usermanager</Export-Package>
                         <Import-Package></Import-Package>
-                        <Bundle-Version>1.0.5</Bundle-Version>
+                        <Bundle-Version>1.0.8</Bundle-Version>
                     </instructions>
                     <unpackBundle>false</unpackBundle>
                 </configuration>

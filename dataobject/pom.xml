@@ -10,6 +10,7 @@
     <modelVersion>4.0.0</modelVersion>
 
     <artifactId>dataobject</artifactId>
+    <version>1.0.1</version>
     <packaging>bundle</packaging>
 
     <dependencies>
@@ -35,6 +36,7 @@
                 <extensions>true</extensions>
                 <configuration>
                     <instructions>
+                        <Bundle-Activator>com.shuyun.osgi.dev2.customer.Activator</Bundle-Activator>
                     </instructions>
                     <unpackBundle>false</unpackBundle>
                 </configuration>

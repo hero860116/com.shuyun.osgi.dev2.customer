@@ -9,6 +9,11 @@ import org.osgi.framework.ServiceReference;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
+import java.io.BufferedReader;
+import java.io.File;
+import java.io.FileReader;
+import java.io.PrintWriter;
+
 
 public class Activator implements BundleActivator {
 
@@ -29,6 +34,26 @@ public class Activator implements BundleActivator {
 
 
         logger.info("bundle mybatistest start");
+
+
+         /* 读写绝对路径文件测试 */
+        StringBuilder sb = new StringBuilder();
+        BufferedReader in = new BufferedReader(new FileReader("c:\\a.txt"));
+        try {
+            String s;
+            while ((s = in.readLine()) != null) {
+                sb.append("insert into ECif(a, b, c) values(");
+                sb.append(s);
+                sb.append(");");
+                sb.append("\n");
+            }
+        } finally {
+            in.close();
+        }
+
+        PrintWriter out = new PrintWriter(new File("c:\\b.txt"));
+        out.print(sb);
+        out.close();
 
 
         ServiceReference serviceRef = bundleContext.getServiceReference(UserDAO.class);
